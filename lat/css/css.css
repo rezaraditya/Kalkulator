@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: url(/lat/img/Welcome.png);
+    background-size: cover;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.header{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.colourtext{
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: yellow; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+}
+.calculator{
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+.textView{
+    width: 220px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+} 
+
+.button{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 5px ;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #fefefe;
+}
+.button :hover{
+    box-shadow:  0px 0px 3px black;
+}
+.equal{
+    height: 110px;
+}
+.equal:hover{
+    background: green;
+    color: white ;
+}
+.del:hover{
+    background: red;
+    color: seashell;
+}
+.zero{
+    width: 110px;
+}
+
